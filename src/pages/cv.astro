@@ -3,90 +3,40 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
-<BaseLayout title="Resume" sideBarActiveItemID="cv">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
-  </div>
-
+<BaseLayout title="CV" sideBarActiveItemID="cv">
+  <div class="mb-5"><div class="text-3xl w-full font-bold">Profile</div></div>
   <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Electronics Information Engineering graduate with experience in overseas FAE support, component data,
+    product search, AI-assisted data extraction, and workflow automation. I enjoy work that connects
+    engineering knowledge with data and practical software tools.
   </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
-  </div>
-
+  <div class="mb-5"><div class="text-3xl w-full font-bold">Education</div></div>
   <div class="time-line-container grid gap-4 mb-10">
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
+    <TimeLineElement title="B.Eng. in Electronic Information Engineering" subtitle="2020–2024 · Hanshan Normal University, Guangdong, China" />
   </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
-  </div>
-
+  <div class="mb-5"><div class="text-3xl w-full font-bold">Experience</div></div>
   <div class="time-line-container mb-10">
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+    <TimeLineElement title="Overseas FAE / Technical Customer Support" subtitle="2024–Present · Electronics distribution & PCBA">
+      Technical pre-sales and after-sales support, component selection/replacement, datasheet-based issue analysis,
+      customer communication, product information research, and cross-team coordination.
     </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+    <TimeLineElement title="Component Data & Search Projects" subtitle="Product data / e-commerce">
+      Worked on parameter architecture, category mapping, filter dictionaries, component replacement research,
+      and search-related data improvements.
     </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+    <TimeLineElement title="AI & Workflow Automation" subtitle="Internal tools and data workflows">
+      Supported AI parameter extraction workflows and built lightweight automation for recurring FAE reporting and data tasks.
     </TimeLineElement>
   </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
-  </div>
-
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-  </ul>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
-  </div>
-
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+  <div class="mb-5"><div class="text-3xl w-full font-bold">Selected skills</div></div>
+  <ul class="list-disc md:columns-3 columns-2 mx-6 mb-10">
+    <li>Electronics / Components</li><li>FAE Support</li><li>Datasheet Analysis</li>
+    <li>Component Selection</li><li>Product Data</li><li>Search / Filters</li>
+    <li>AI Prompt Design</li><li>Data Extraction</li><li>Workflow Automation</li>
+    <li>Excel</li><li>Python / Colab</li><li>Basic Java</li>
+    <li>Technical Writing</li><li>English Customer Support</li><li>Git / GitHub</li>
   </ul>
 </BaseLayout>
