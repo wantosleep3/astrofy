@@ -6,45 +6,54 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 <BaseLayout title="Projects" sideBarActiveItemID="projects">
   <div class="mb-8">
     <div class="text-3xl w-full font-bold mb-3">Projects</div>
-    <p class="text-lg">A selection of technical, data, AI, and automation work I've contributed to.</p>
+    <p class="text-lg">Personal builds and selected, anonymized work case studies across electronics, product data, search, and AI-assisted workflows.</p>
+    <p class="mt-3 text-sm opacity-70">Work case studies describe my contributions at a high level. Internal systems, customer information, and confidential datasets are not published here.</p>
   </div>
 
+  <div class="mb-4">
+    <div class="text-xl font-bold">Personal build</div>
+  </div>
   <HorizontalCard
-    title="AI Parameter Extraction Workflow"
+    title="AI BOM Copilot"
     img="/post_img.webp"
-    desc="Designed and supported an AI-assisted parameter extraction workflow covering task creation, prompt logic, priority content, category/reclassification/re-extraction, review and closing operations."
-    url="#"
-    badge="AI / DATA"
+    desc="A prototype workspace for BOM normalization and component search, built to explore how structured workflows can make component review more efficient."
+    url="/projects/ai-bom-copilot/"
+    target="_self"
+    badge="PERSONAL BUILD"
+    tags={["AI", "BOM", "Cloudflare Workers"]}
+  />
+
+  <div class="divider my-5"></div>
+  <div class="mb-4">
+    <div class="text-xl font-bold">Selected work case studies</div>
+  </div>
+  <HorizontalCard
+    title="Component Parameter Architecture"
+    img="/post_img.webp"
+    desc="A product-data initiative to standardize electronic component attributes, align category-level parameters, and support more consistent filters and product information."
+    url="/projects/component-data-architecture/"
+    target="_self"
+    badge="PRODUCT DATA"
+    tags={["Taxonomy", "Data Governance", "E-commerce"]}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Component Search & Parameter Architecture"
+    title="Component Search Experience Redesign"
     img="/post_img.webp"
-    desc="Worked on electronic parameter architecture, filter dictionaries, category mapping, and search-related data improvements. A search redesign project was measured from 4.04% to 5.71% CVR."
-    url="#"
+    desc="A search-result experience improvement spanning filter usability, query scenarios, search logic, and conversion-funnel measurement."
+    url="/projects/search-experience/"
+    target="_self"
     badge="SEARCH"
+    tags={["Search UX", "Analytics", "E-commerce"]}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="BOM Matching & Component Replacement"
+    title="AI-assisted Parameter Extraction Workflow"
     img="/post_img.webp"
-    desc="Supported component selection and replacement research, including large-scale BOM matching and investigation of alternative parts using supplier and distributor data."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="DigiKey API / EDI Research"
-    img="/post_img.webp"
-    desc="Researched differences between an internal component API and DigiKey's digital integration capabilities, focusing on supported functions, fields, documentation, and conversion bottlenecks."
-    url="#"
-    badge="API"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="FAE Weekly Report Automation"
-    img="/post_img.webp"
-    desc="Built a repeatable workflow around weekly spreadsheets, work-order counts, project communication, and structured report generation."
-    url="#"
-    badge="AUTOMATION"
+    desc="An anonymized workflow case study covering extraction task design, prompt iteration, review operations, and data-quality checks."
+    url="/projects/component-data-architecture/"
+    target="_self"
+    badge="AI WORKFLOW"
+    tags={["AI", "Data Quality", "Operations"]}
   />
 </BaseLayout>
