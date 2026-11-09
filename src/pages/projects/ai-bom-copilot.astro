@@ -1,0 +1,74 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="AI BOM Copilot" sideBarActiveItemID="projects">
+  <div class="mb-8">
+    <a href="/projects" class="link link-hover text-sm opacity-70">← Back to Projects</a>
+    <div class="mt-5 mb-3"><span class="badge badge-secondary">PERSONAL BUILD</span></div>
+    <h1 class="text-4xl font-bold mb-4">AI BOM Copilot</h1>
+    <p class="text-xl opacity-80">A prototype workspace exploring BOM normalization, component search, and a more reviewable component-selection workflow.</p>
+    <div class="flex flex-wrap gap-3 mt-6">
+      <a class="btn btn-primary" href="https://ai-bom-demo.buwygfimb.workers.dev/" target="_blank" rel="noreferrer">Launch Demo ↗</a>
+      <a class="btn btn-outline" href="https://github.com/wantosleep3/ai-bom-Copilot" target="_blank" rel="noreferrer">View Source ↗</a>
+    </div>
+  </div>
+
+  <div class="card bg-base-200 p-5 mb-8">
+    <div class="text-sm uppercase tracking-wide opacity-60 mb-2">Project snapshot</div>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <div><div class="font-semibold">Type</div><div>Personal prototype</div></div>
+      <div><div class="font-semibold">Runtime</div><div>Cloudflare Workers</div></div>
+      <div><div class="font-semibold">Focus</div><div>BOM normalization and candidate search</div></div>
+      <div><div class="font-semibold">Status</div><div>Interactive demo · limited scope</div></div>
+    </div>
+  </div>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-3">The problem</h2>
+    <p>Electronic BOMs often contain inconsistent manufacturer names, part-number formatting, descriptions, and quantities. Before a sourcing or engineering team can review a list, the data needs to be normalized and presented in a consistent structure.</p>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-3">What I built</h2>
+    <p class="mb-3">I built a lightweight web prototype to explore a clearer workflow around BOM normalization and component candidate lookup. The project separates the user-facing review experience from the Worker API and keeps the demo isolated from production code.</p>
+    <ul class="list-disc pl-6 space-y-2">
+      <li>A browser-based BOM workspace with a structured result table.</li>
+      <li>Normalization endpoints exposed through a Cloudflare Worker.</li>
+      <li>A demo flow using prepared sample data and simulated progress states.</li>
+      <li>A supplier keyword-search integration through a Mouser service binding in the demo environment.</li>
+      <li>Separate demo and production source branches to reduce accidental cross-deployment.</li>
+    </ul>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-3">Architecture</h2>
+    <div class="card bg-base-200 p-4">
+      <div class="font-mono text-sm leading-7">
+        <div>Browser UI</div>
+        <div class="pl-5">↓</div>
+        <div>Cloudflare Worker · API layer</div>
+        <div class="pl-5">↓</div>
+        <div>Normalization logic + prepared demo data</div>
+        <div class="pl-5">↓</div>
+        <div>Supplier keyword lookup · Mouser binding</div>
+      </div>
+    </div>
+    <p class="text-sm opacity-70 mt-2">This is a simplified view of the demo architecture, not a production sourcing pipeline.</p>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-3">Current limitations</h2>
+    <ul class="list-disc pl-6 space-y-2">
+      <li>The interactive normalization scenario uses prepared demo data; it is not an arbitrary-file upload or general-purpose LLM parsing service.</li>
+      <li>Supplier search returns keyword-based candidates. It does not guarantee exact part-number matching.</li>
+      <li>The demo does not query or verify live inventory, pricing, lead times, or order availability.</li>
+      <li>It is a portfolio prototype, not a production procurement or component-verification system.</li>
+    </ul>
+  </section>
+
+  <div class="border-t border-base-300 pt-6 flex flex-wrap gap-3">
+    <a class="btn btn-primary" href="https://ai-bom-demo.buwygfimb.workers.dev/" target="_blank" rel="noreferrer">Try the Demo ↗</a>
+    <a class="btn btn-outline" href="https://github.com/wantosleep3/ai-bom-Copilot" target="_blank" rel="noreferrer">Source Code ↗</a>
+  </div>
+</BaseLayout>

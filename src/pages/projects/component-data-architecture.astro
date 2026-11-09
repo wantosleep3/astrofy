@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Component Parameter Architecture" sideBarActiveItemID="projects">
+  <div class="mb-8">
+    <a href="/projects" class="link link-hover text-sm opacity-70">← Back to Projects</a>
+    <div class="mt-5 mb-3"><span class="badge badge-outline">ANONYMIZED WORK CASE STUDY</span></div>
+    <h1 class="text-4xl font-bold mb-4">Component Parameter Architecture</h1>
+    <p class="text-xl opacity-80">Structuring electronic component attributes into a more consistent foundation for product information, filters, and downstream workflows.</p>
+  </div>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-3">Context</h2>
+    <p>Electronic component catalogs contain many product families, each with different technical attributes, units, naming conventions, and levels of detail. Inconsistent parameter structures make it harder to maintain product pages and build reliable category filters.</p>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-3">My contribution</h2>
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Helped organize category-level parameter requirements and map source attributes to a standardized reference vocabulary.</li>
+      <li>Worked on parameter naming, data types, unit conventions, core-attribute flags, and product-description ordering.</li>
+      <li>Reviewed mapping quality and sampled records to identify missing, inconsistent, or incorrectly split values before downstream use.</li>
+      <li>Connected the parameter structure to practical e-commerce needs such as filters, product descriptions, and BOM-related discovery.</li>
+    </ul>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-3">Scale and approach</h2>
+    <div class="grid sm:grid-cols-3 gap-3">
+      <div class="card bg-base-200 p-4"><div class="text-3xl font-bold">2,000+</div><div class="text-sm opacity-70">reference attribute definitions</div></div>
+      <div class="card bg-base-200 p-4"><div class="text-3xl font-bold">600+</div><div class="text-sm opacity-70">core attributes identified</div></div>
+      <div class="card bg-base-200 p-4"><div class="text-3xl font-bold">~10k</div><div class="text-sm opacity-70">sampled values in QA</div></div>
+    </div>
+    <p class="text-xs opacity-60 mt-2">Rounded, high-level figures only. No internal catalog exports, customer data, or proprietary mapping files are included.</p>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-3">Why it matters</h2>
+    <p>A well-defined parameter layer can improve consistency across product detail pages and filters, reduce repeated manual interpretation, and provide cleaner inputs for search and matching workflows. The key challenge is not simply collecting more attributes; it is defining which attributes belong to each product family and how their values should be represented.</p>
+  </section>
+
+  <div class="border-t border-base-300 pt-6">
+    <a class="btn btn-outline" href="/projects">Back to all projects</a>
+  </div>
+</BaseLayout>

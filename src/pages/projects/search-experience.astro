@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Component Search Experience Redesign" sideBarActiveItemID="projects">
+  <div class="mb-8">
+    <a href="/projects" class="link link-hover text-sm opacity-70">← Back to Projects</a>
+    <div class="mt-5 mb-3"><span class="badge badge-outline">ANONYMIZED WORK CASE STUDY</span></div>
+    <h1 class="text-4xl font-bold mb-4">Component Search Experience Redesign</h1>
+    <p class="text-xl opacity-80">Improving how engineers and buyers narrow down electronic component search results through clearer filters and more intentional search logic.</p>
+  </div>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-3">Challenge</h2>
+    <p>Component search serves users with different levels of technical knowledge and different goals. A filter experience that is difficult to scan, inconsistent across categories, or unclear about its logic can make it harder to move from a query to a relevant product detail page.</p>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-3">My contribution</h2>
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Helped break down search-result usage into user scenarios and filter-logic types.</li>
+      <li>Reviewed search terms and category-specific filter behavior to identify usability gaps.</li>
+      <li>Worked across product, engineering, and business requirements to clarify expected behavior.</li>
+      <li>Compared funnel metrics before and after the change to understand movement in product discovery and add-to-cart behavior.</li>
+    </ul>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-3">Reported project-period metrics</h2>
+    <div class="grid sm:grid-cols-3 gap-3">
+      <div class="card bg-base-200 p-4">
+        <div class="text-sm opacity-70">Search → detail</div>
+        <div class="text-2xl font-bold">1.28% → 1.80%</div>
+      </div>
+      <div class="card bg-base-200 p-4">
+        <div class="text-sm opacity-70">Search → add to cart</div>
+        <div class="text-2xl font-bold">4.48% → 5.17%</div>
+      </div>
+      <div class="card bg-base-200 p-4">
+        <div class="text-sm opacity-70">Result-page add to cart</div>
+        <div class="text-2xl font-bold">3.20% → 3.38%</div>
+      </div>
+    </div>
+    <p class="text-xs opacity-60 mt-2">These are observed before/after project-period figures, not a claim that the redesign alone caused every change. They are presented without company, customer, or traffic-source identifiers.</p>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-3">Takeaway</h2>
+    <p>Search improvements require more than visual polish. They depend on understanding query intent, category attributes, filter semantics, and the path users take after seeing results. A useful redesign makes the next decision easier while keeping the underlying logic predictable.</p>
+  </section>
+
+  <div class="border-t border-base-300 pt-6">
+    <a class="btn btn-outline" href="/projects">Back to all projects</a>
+  </div>
+</BaseLayout>
