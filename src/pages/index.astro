@@ -11,9 +11,9 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     <div class="py-2">
       <p class="text-lg">
         I work at the intersection of electronics, product data, and digital products.
-        My experience spans component technical support, product parameter architecture,
-        search and filter optimization, and AI-assisted workflows. Outside my day-to-day
-        work, I build small software experiments that make complex or repetitive tasks easier.
+        My experience spans component technical support, BOM matching improvement,
+        product parameter architecture, search experience, and AI-assisted workflows.
+        I also build small software tools to make complex or repetitive tasks easier.
       </p>
     </div>
     <div class="mt-8 flex flex-wrap gap-3">
@@ -48,22 +48,30 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
   <div>
     <div class="text-3xl w-full font-bold mb-5">Selected projects</div>
-    <p class="mb-4">A mix of personal builds and anonymized work case studies. Company-confidential data and systems are intentionally excluded.</p>
+    <p class="mb-4">A personal build alongside three anonymized work case studies. Each page explains the problem, my contribution, and the evidence behind the result.</p>
   </div>
-
   <HorizontalCard
     title="AI BOM Copilot"
     img="/post_img.webp"
-    desc="A personal prototype exploring BOM normalization, component search, and a clearer workflow for reviewing candidate parts."
+    desc="A personal prototype exploring BOM normalization, supplier candidate search, and a reviewable component workflow."
     url="/projects/ai-bom-copilot/"
     target="_self"
     badge="PERSONAL BUILD"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
+    title="BOM Matching Accuracy Improvement"
+    img="/post_img.webp"
+    desc="Turning real-world matching failures into requirements, test cases, and measurable acceptance criteria."
+    url="/projects/bom-matching-improvement/"
+    target="_self"
+    badge="WORK CASE STUDY"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
     title="Component Parameter Architecture"
     img="/post_img.webp"
-    desc="An anonymized product-data case study on standardizing component attributes, category mapping, and reusable parameter structures."
+    desc="An anonymized case study on standardizing component attributes and building a reusable product-data foundation."
     url="/projects/component-data-architecture/"
     target="_self"
     badge="WORK CASE STUDY"
@@ -72,7 +80,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   <HorizontalCard
     title="Component Search Experience Redesign"
     img="/post_img.webp"
-    desc="An anonymized e-commerce case study focused on search-result usability, filter logic, and measurable funnel improvements."
+    desc="An anonymized case study focused on search-result usability, filter logic, and observed funnel changes."
     url="/projects/search-experience/"
     target="_self"
     badge="WORK CASE STUDY"

@@ -1,0 +1,70 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="BOM Matching Accuracy Improvement" sideBarActiveItemID="projects">
+  <div class="mb-8">
+    <a href="/projects" class="link link-hover text-sm opacity-70">← Back to Projects</a>
+    <div class="mt-5 mb-3"><span class="badge badge-outline">ANONYMIZED WORK CASE STUDY</span></div>
+    <h1 class="text-4xl font-bold mb-4">BOM Matching Accuracy Improvement</h1>
+    <p class="text-xl opacity-80 max-w-3xl">Improving overseas BOM matching by turning real-world failure cases into clearer requirements, matching rules, and measurable acceptance tests.</p>
+  </div>
+
+  <div class="grid sm:grid-cols-3 gap-3 mb-9">
+    <div class="card bg-base-200 p-4"><div class="text-xs uppercase opacity-60">Period</div><div class="font-semibold mt-1">Apr – Jun 2025</div></div>
+    <div class="card bg-base-200 p-4"><div class="text-xs uppercase opacity-60">My role</div><div class="font-semibold mt-1">Requirements analysis & test acceptance</div></div>
+    <div class="card bg-base-200 p-4"><div class="text-xs uppercase opacity-60">Focus</div><div class="font-semibold mt-1">BOM search quality</div></div>
+  </div>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-3">The challenge</h2>
+    <p>Customer BOMs arrive in inconsistent formats. Part numbers may appear in unexpected columns, manufacturer names may use aliases, and descriptions can mix package and electrical parameters. A system can retrieve candidates yet still label the match incorrectly—or miss a usable part entirely.</p>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-3">What I contributed</h2>
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Analyzed 83 BOM files and classified 466 matching bad cases, covering more than 3,400 component lines.</li>
+      <li>Identified recurring failure patterns involving column selection, mixed descriptions, manufacturer aliases, missing value fields, and match-status rules.</li>
+      <li>Worked with product and engineering partners to translate those cases into requirements, including header pre-recognition, alias handling, category-specific parameter checks, and clearer match-status evaluation.</li>
+      <li>Defined measurement requirements to distinguish system matching rate from downstream business-adjusted completion rate.</li>
+      <li>Compared results in the FAT environment and supported acceptance testing against representative BOM samples.</li>
+    </ul>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-3">Measured result</h2>
+    <div class="grid sm:grid-cols-2 gap-3">
+      <div class="card bg-base-200 p-4">
+        <div class="text-sm opacity-70">Accuracy in a 21-BOM acceptance sample</div>
+        <div class="text-3xl font-bold mt-1">80.04% → 93.63%</div>
+        <div class="text-xs opacity-60 mt-2">A 13.59 percentage-point increase in this test sample.</div>
+      </div>
+      <div class="card bg-base-200 p-4">
+        <div class="text-sm opacity-70">Cases reviewed</div>
+        <div class="text-3xl font-bold mt-1">83 BOMs · 466 cases</div>
+        <div class="text-xs opacity-60 mt-2">More than 3,400 component lines across the analyzed files.</div>
+      </div>
+    </div>
+    <p class="text-xs opacity-60 mt-2">The accuracy figures are from a 21-BOM acceptance sample, not a claim about every production order. I contributed requirements analysis, case classification, metric definition, and testing; the underlying search algorithms and production implementation were owned by the engineering team.</p>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-3">What changed in the workflow</h2>
+    <div class="grid md:grid-cols-4 gap-2">
+      <div class="card bg-base-200 p-3"><div class="text-xs opacity-60">01</div><div class="font-semibold">Collect</div><p class="text-sm mt-1">Capture real BOM failure cases and expected outcomes.</p></div>
+      <div class="card bg-base-200 p-3"><div class="text-xs opacity-60">02</div><div class="font-semibold">Classify</div><p class="text-sm mt-1">Group issues by columns, aliases, parameters, and status logic.</p></div>
+      <div class="card bg-base-200 p-3"><div class="text-xs opacity-60">03</div><div class="font-semibold">Specify</div><p class="text-sm mt-1">Turn recurring cases into testable product requirements.</p></div>
+      <div class="card bg-base-200 p-3"><div class="text-xs opacity-60">04</div><div class="font-semibold">Validate</div><p class="text-sm mt-1">Compare old and new results with a defined acceptance sample.</p></div>
+    </div>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-3">What this demonstrates</h2>
+    <p>This project shows how I connect component-domain knowledge with product requirements and data-driven validation. My contribution was not training a matching model or implementing the search engine; it was making failure patterns legible, defining what the system should do, and checking whether the delivered behavior improved on representative cases.</p>
+  </section>
+
+  <div class="border-t border-base-300 pt-6">
+    <a class="btn btn-outline" href="/projects">Back to all projects</a>
+  </div>
+</BaseLayout>
