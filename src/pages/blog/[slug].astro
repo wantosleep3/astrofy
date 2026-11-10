@@ -6,6 +6,11 @@ import createSlug from "../../lib/createSlug"
 
 export async function getStaticPaths() {
   const postEntries = await getCollection("blog");
+
+  // Blog posts are intentionally unpublished on this portfolio.
+  // Return no detail routes when the collection is empty.
+  if (!postEntries?.length) return [];
+
   return postEntries.map((entry) => ({
     params: { slug: createSlug(entry.data.title, entry.slug) },
     props: { entry },
